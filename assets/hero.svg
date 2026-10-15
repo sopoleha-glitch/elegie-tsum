@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#171b18"/><stop offset="1" stop-color="#070807"/></linearGradient>
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f1eee7"/><stop offset=".55" stop-color="#a99f8e"/><stop offset="1" stop-color="#5f5a51"/></linearGradient>
+<filter id="blur"><feGaussianBlur stdDeviation="28"/></filter>
+<filter id="shadow"><feDropShadow dx="0" dy="25" stdDeviation="30" flood-opacity=".45"/></filter>
+</defs>
+<rect width="1600" height="1000" fill="url(#bg)"/>
+
+<ellipse cx="350" cy="170" rx="420" ry="220" fill="#d8d0bd" opacity=".16" filter="url(#blur)"/>
+<ellipse cx="1250" cy="760" rx="500" ry="300" fill="#45665b" opacity=".20" filter="url(#blur)"/>
+<!-- airplane window -->
+<path d="M150 100 Q800 15 1450 100 L1450 900 Q800 985 150 900Z" fill="#b9c5c0" opacity=".12" stroke="#eee9dc" stroke-opacity=".3" stroke-width="5"/>
+<path d="M180 160 Q800 85 1420 160 L1420 840 Q800 915 180 840Z" fill="#273630" opacity=".72"/>
+<!-- sky -->
+<rect x="200" y="180" width="1200" height="660" rx="170" fill="#a8b4ad" opacity=".24"/>
+<ellipse cx="830" cy="455" rx="500" ry="230" fill="#d9d5c8" opacity=".32"/>
+<!-- clouds -->
+<g fill="#f4f0e7" opacity=".58">
+ <ellipse cx="430" cy="500" rx="150" ry="38"/><ellipse cx="560" cy="490" rx="115" ry="32"/>
+ <ellipse cx="1080" cy="570" rx="180" ry="42"/><ellipse cx="1220" cy="555" rx="120" ry="35"/>
+</g>
+<!-- wing -->
+<path d="M1050 650 L1380 795 L1400 825 L1160 750 L960 690Z" fill="#d8d4c9" opacity=".82" filter="url(#shadow)"/>
+<path d="M1120 705 L1390 815" stroke="#6f736d" stroke-width="4" opacity=".5"/>
+<!-- subtle route -->
+<path d="M300 760 C580 590 760 760 1020 590 S1300 500 1370 420" fill="none" stroke="#f0eadb" stroke-width="3" stroke-dasharray="10 18" opacity=".45"/>
+<circle cx="300" cy="760" r="7" fill="#f0eadb"/><circle cx="1370" cy="420" r="7" fill="#f0eadb"/>
+
+</svg>
